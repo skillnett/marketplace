@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('./public/styles/fonts.css');
+
+a:hover,
+button:hover {
+	opacity: 80%;
+	transition: opacity 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888888;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #fcfcfc;
+	border-radius: 4px;
+	border: 1px solid #e8e8e8;
+}
+
+.container {
+	@apply w-[1252px];
+}
+
+.on-line-now {
+	@apply flex items-center gap-1;
+}
+
+.on-line-now span {
+	@apply block rounded-full w-[8px] md:w-[12px] h-[8px] md:h-[12px] bg-accentYellow;
+}
+
+.on-line-now span.active {
+	@apply bg-accentGreen;
+}
+
+.on-line-now>p {
+	@apply text-[10px] md:text-xs;
+}
+
+.card {
+	@apply w-full h-full;
+}
+
+.card-image {
+	@apply max-w-[87px] md:max-w-[211px] w-full;
+}
+
+/* dropdown */
+.dropdown {
+	@apply relative w-full max-w-[308px] inline-block;
+}
+
+.year-graduated {
+	@apply max-w-[232px];
+}
+
+.roles {
+	@apply max-w-full lg:max-w-[403px];
+}
+
+.compensation {
+	@apply max-w-[203px];
+}
+
+.radius {
+	@apply max-w-[165px];
+}
+
+.clear-all {
+	@apply max-w-[135px];
+}
+
+.keyword {
+	@apply max-w-[246px] text-sm md:text-lg;
+}
+
+.keyword input[type='text'] {
+	@apply outline-none max-h-[48px];
+	background: transparent;
+}
+
+.zip-code input[type='text'] {
+	@apply outline-none;
+}
+
+.dropdown-toggle {
+	@apply cursor-pointer flex items-center justify-center gap-1.5 border border-[#b1b0b0] rounded-15 bg-inputBg py-4 px-4 md:px-5 max-h-[46px] md:max-h-[52px];
+}
+
+.roles .dropdown-toggle {
+	@apply pl-4 md:pl-8;
+}
+
+.icon {}
+
+.arrow {
+	@apply ml-auto max-w-2 md:max-w-[14px];
+}
+
+.dropdown-title-wrap {
+	@apply flex items-center justify-center gap-2;
+}
+
+.dropdown-title {
+	@apply text-sm md:text-lg text-dropdownText leading-none;
+}
+
+.active-content {
+	@apply text-fontGreyLight;
+}
+
+.dropdown-content {
+	@apply hidden absolute z-10 flex-col gap-4 md:gap-6 justify-center rounded-15 w-full shadow-cardShadow mt-1 py-5 px-8 bg-lightColor;
+}
+
+.dropdown-content a {
+	@apply w-max;
+}
+
+.dropdown-text {
+	@apply text-xs md:text-lg text-fontGrey;
+}
+
+.info-wrapper {
+	mask: linear-gradient(0deg, transparent, white 20%);
+	-webkit-mask: linear-gradient(0deg, transparent, white 20%);
+}
+
+/* ---menu footer--- */
+
+.custom-menu {
+	@apply relative flex flex-col text-sm;
+}
+
+.menu-toggle {
+	@apply cursor-pointer flex gap-2 items-center lg:justify-start sm:justify-end;
+}
+
+.menu-title {
+	@apply font-semibold;
+}
+
+.menu-content {
+	@apply hidden absolute flex-col z-10 max-w-full lg:max-w-[224px] gap-4 mt-6;
+}
+
+.menu-content a {
+	@apply lg:text-left sm:text-right;
+}
+
+.custom-menu.open .menu-content {
+	@apply flex relative;
+}
+
+.arrow-icon {
+	@apply block w-2;
+}
+
+.custom-menu.open .arrow-icon {
+	transform: rotate(-90deg);
+}
+
+@media screen and (min-width: 976px) {
+	.custom-menu .menu-content {
+		@apply flex flex-col;
+	}
+
+	.arrow-icon {
+		@apply hidden;
+	}
+
+	.menu-content {
+		@apply relative;
+	}
+}
+
+.info-wrapper-mobile {
+	overflow: hidden;
+	height: 0px;
+}
+
+.open {
+	height: 100%;
+	width: 100%;
+	transition: height 0.4s ease-in-out;
+}
+
+.hidden-block {
+	display: none;
+}
+
+.show-block {
+	display: flex;
+}
+
+.button-next {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: fit-content;
+	height: 100%;
+	transform: translate(-50%, -100%);
+	z-index: 10;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(180deg);
+}
+
+.button-prev {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 100%;
+	z-index: 10;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: transparent;
+}
+
+.button-prev::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 130%;
+	height: 100%;
+	left: 0;
+	z-index: -1;
+	background: linear-gradient(90deg, white 20%, transparent);
+}
+
+.button-next::after {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 130%;
+	height: 100%;
+	right: 0;
+	z-index: -1;
+	background: linear-gradient(-90deg, transparent, white 80%);
+}
+
+.slider-1 {
+	overflow-x: hidden;
+	overflow-y: visible !important;
+}

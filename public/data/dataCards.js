@@ -1,0 +1,347 @@
+const dataCards = [
+  {
+    id: 0,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "/public/assets/images/adam-00.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Remote",
+
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 1,
+    name: "Sara M.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "/public/assets/images/adam-01.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Remote",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Jon G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "/public/assets/images/adam-02.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: false,
+    looking: "Full time",
+    preference: "Remote",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "./public/assets/images/adam-03.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Remote",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "./public/assets/images/adam-04.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Preference",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "./public/assets/images/adam-05.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: false,
+    looking: "Full time",
+    preference: "Preference",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "./public/assets/images/adam-06.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Preference",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "/public/assets/images/adam-07.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Preference",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: "Adams G.",
+    desc: "Sales Development Representative",
+    level: "Senior Level",
+    price: "$50,000 - $150,000",
+    study: "Havard University, 2012",
+    skill: ["Retail Sales", "Internet Sales", "Customer Support"],
+    image: "/public/assets/images/adam-07.jpg",
+    location: "Los Angeles, CA (3.2 miles away)",
+    onLine: true,
+    looking: "Full time",
+    preference: "Preference",
+    language: "English, Spanish",
+    certification: "National Sales Certificate, Google. 2014",
+    experience:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    industry: "Automotive, Health Care",
+    aboutMe:
+      "I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.I bring my financial expertise, attention to details, and analytical skills to the total growth and success.",
+    references: [
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+      {
+        text: "Chelsey was an amazing employee. Always showed up on time and completed work in the most appropriate way which always bring forth great success for the company an... See More",
+        name: "Morris Charles",
+        position: "Manager, Microsoft.Inc",
+      },
+    ],
+  },
+];
+
+export default dataCards;

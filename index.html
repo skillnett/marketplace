@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Marketplace</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+	<link href="./dist/output.css" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+
+	<script src="slider.js" defer></script>
+	<script src="index.js" type="module" defer></script>
+
+</head>
+
+<body class="font-sans font-normal text-fontGrey">
+	<div class="flex flex-col justify-center w-full min-h-screen">
+		<header class="header">
+			<div class="container flex justify-between items-center py-[22px] md:py-8">
+				<div>
+					<a href="#">
+						<img class="w-[59px] md:w-full" src="./public/assets/staft-logo.svg" alt="Staft logo" />
+					</a>
+				</div>
+				<nav class="hidden md:flex">
+					<ul class="font-medium flex gap-24 text-lg">
+						<li><a href="#"> Employers </a></li>
+						<li><a href="#"> Job Seekers </a></li>
+						<li class=" font-bold text-primaryTeal"><a href="#"> Sign In</a></li>
+					</ul>
+				</nav>
+				<button class="md:hidden"><img src="./public/assets/icons/nav-btn.svg" alt="Burger button"></button>
+			</div>
+		</header>
+		<main class="flex-auto">
+			<div class="looking-wrapper">
+				<div class="container pt-3 py-[14px] md:pb-12">
+					<div class="w-full max-w-[1110px] flex justify-between items-center 
+						gap-2 md:gap-8 mx-auto p-2 xl:px-[100px] xl:py-5 shadow-searchShadow rounded-25 xl:rounded-35 ">
+						<div class="flex items-center  gap-4 w-full max-w-[516px]">
+							<span class="hidden lg:block font-semibold text-lg whitespace-nowrap ">Looking
+								for:</span>
+							<div class="dropdown roles">
+								<div class="dropdown-toggle" data-dropdown-id="dropdownContentRoles">
+									<div class="dropdown-title-wrap">
+										<span class="dropdown-title ">Roles</span>
+									</div>
+									<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+								</div>
+								<div class="dropdown-content " id="dropdownContentRoles">
+									<a href="#"> <span class="dropdown-text">Advertising</span> </a>
+									<a href="#"> <span class="dropdown-text">Automotive</span> </a>
+									<a href="#"> <span class="dropdown-text">Energy</span> </a>
+								</div>
+							</div>
+						</div>
+						<div class="flex items-center gap-4 ">
+							<span class="hidden lg:block  font-semibold text-lg ">Where:</span>
+							<div class="zip-code text-sm md:text-lg w-full w-[185px] md:max-w-[315px] ">
+								<input type="text"
+									class=" flex items-center w-full max-h-[46px] md:max-h-[52px]  justify-center border border-[#b1b0b0] rounded-15 bg-inputBg py-4 pr-6 pl-4 md:pl-8 "
+									placeholder="Zip Code">
+							</div>
+						</div>
+						<div>
+							<button class="flex items-center w-max max-w-[46px] md:max-w-[52px]">
+								<img src="./public/assets/icons/search.svg" alt="Search">
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hidden xl:block mx-auto w-full max-w-[1326px] overflow-hidden">
+				<div class=" flex gap-0 xl:gap-2 items-center  w-full">
+					<div class=" dropdown industry">
+						<div class="dropdown-toggle" data-dropdown-id="dropdownContent1">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/industry.svg" alt="Icon" class="icon">
+								<span class="dropdown-title">Industry</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent1">
+							<a href="#"><span class="dropdown-text">Sales</span></a>
+							<a href="#"><span class="dropdown-text">General</span></a>
+							<a href="#"><span class="dropdown-text">Administrative</span></a>
+						</div>
+					</div>
+
+					<div class=" dropdown year-graduated">
+						<div class="dropdown-toggle " data-dropdown-id="dropdownContent2">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/year-graduated.svg" alt="Icon" class="icon">
+								<span class="dropdown-title active-content">Year Graduated</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent2">
+							<a href="#"> <span class="dropdown-text">2024</span> </a>
+							<a href="#"> <span class="dropdown-text">2023</span> </a>
+							<a href="#"> <span class="dropdown-text">2022</span> </a>
+						</div>
+					</div>
+
+					<div class="dropdown compensation">
+						<div class="dropdown-toggle" data-dropdown-id="dropdownContent3">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/compensation.svg" alt="Icon" class="icon">
+								<span class="dropdown-title">Compensation</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent3">
+							<a href="#"> <span class="dropdown-text">$20,000-$50,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$50,000-$75,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$75,000-$100,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$100,000-$200,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$200,000+</span> </a>
+						</div>
+					</div>
+
+					<div class="dropdown radius">
+						<div class="dropdown-toggle " data-dropdown-id="dropdownContent4">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/location.svg" alt="Icon" class="icon">
+								<span class="dropdown-title active-content">Radius</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent4">
+							<a href="#"> <span class="dropdown-text">5 miles</span> </a>
+							<a href="#"> <span class="dropdown-text">10 miles</span> </a>
+							<a href="#"> <span class="dropdown-text">20 miles</span> </a>
+							<a href="#"> <span class="dropdown-text">50 miles</span> </a>
+						</div>
+					</div>
+					<div class="dropdown keyword">
+						<div class="dropdown-toggle ">
+							<input type="text" class="flex items-center w-full  justify-center py-4 text-[14px] md:text-lg"
+								placeholder="Keyword">
+							<img class="w-full max-w-[16px] md:max-w-[24px]" src="./public/assets/icons/arrow.svg" alt="Arrow">
+						</div>
+					</div>
+
+					<div class="clear-all">
+						<a href="#" class=" text-fontGreyLight font-bold text-[14px] md:text-lg whitespace-nowrap">Clear
+							all filters</a>
+					</div>
+				</div>
+
+			</div>
+			<div class="swiper slider-1  xl:hidden container mx-auto xl:w-full xl:w-[1326px]">
+				<div class="swiper-wrapper flex gap-0 xl:gap-2 items-center  w-full">
+					<div class=" swiper-slide dropdown industry">
+						<div class="dropdown-toggle" data-dropdown-id="dropdownContent1">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/industry.svg" alt="Icon" class="icon">
+								<span class="dropdown-title">Industry</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent1">
+							<a href="#"><span class="dropdown-text">Sales</span></a>
+							<a href="#"><span class="dropdown-text">General</span></a>
+							<a href="#"><span class="dropdown-text">Administrative</span></a>
+						</div>
+					</div>
+
+					<div class=" swiper-slide dropdown year-graduated">
+						<div class="dropdown-toggle " data-dropdown-id="dropdownContent2">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/year-graduated.svg" alt="Icon" class="icon">
+								<span class="dropdown-title active-content">Year Graduated</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent2">
+							<a href="#"> <span class="dropdown-text">2024</span> </a>
+							<a href="#"> <span class="dropdown-text">2023</span> </a>
+							<a href="#"> <span class="dropdown-text">2022</span> </a>
+						</div>
+					</div>
+
+					<div class="swiper-slide dropdown compensation">
+						<div class="dropdown-toggle" data-dropdown-id="dropdownContent3">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/compensation.svg" alt="Icon" class="icon">
+								<span class="dropdown-title">Compensation</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent3">
+							<a href="#"> <span class="dropdown-text">$20,000-$50,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$50,000-$75,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$75,000-$100,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$100,000-$200,000</span> </a>
+							<a href="#"> <span class="dropdown-text">$200,000+</span> </a>
+						</div>
+					</div>
+
+					<div class="swiper-slide dropdown radius">
+						<div class="dropdown-toggle " data-dropdown-id="dropdownContent4">
+							<div class="dropdown-title-wrap ">
+								<img src=" ./public/assets/icons/location.svg" alt="Icon" class="icon">
+								<span class="dropdown-title active-content">Radius</span>
+							</div>
+							<img src="./public/assets/icons/chevron-down.svg" alt="Arrow" class="arrow">
+						</div>
+						<div class="dropdown-content " id="dropdownContent4">
+							<a href="#"> <span class="dropdown-text">5 miles</span> </a>
+							<a href="#"> <span class="dropdown-text">10 miles</span> </a>
+							<a href="#"> <span class="dropdown-text">20 miles</span> </a>
+							<a href="#"> <span class="dropdown-text">50 miles</span> </a>
+						</div>
+					</div>
+					<div class="swiper-slide dropdown keyword">
+						<div class="dropdown-toggle ">
+							<input type="text" class="flex items-center w-full  justify-center py-4 text-[14px] md:text-lg"
+								placeholder="Keyword">
+							<img class="w-full max-w-[16px] md:max-w-[24px]" src="./public/assets/icons/arrow.svg" alt="Arrow">
+						</div>
+					</div>
+
+					<div class=" swiper-slide clear-all">
+						<a href="#" class=" text-fontGreyLight font-bold text-[14px] md:text-lg whitespace-nowrap">Clear
+							all filters</a>
+					</div>
+				</div>
+				<div class="button-next xl:hidden">
+					<img class="w-[20px] md:w-[30px]" src="./public/assets/icons/arrow-slider.svg" alt="Arrow">
+				</div>
+				<div class="button-prev xl:hidden">
+					<img class="w-[20px] md:w-[30px]" src="./public/assets/icons/arrow-slider.svg" alt="Arrow">
+				</div>
+			</div>
+			<div class="content-wrapper pt-[34px] md:pt-14 pb-[120px] ">
+				<div class="container flex gap-4">
+					<div
+						class="card-wrapper xl:overflow-y-auto flex flex-col gap-4 xl:max-h-[1788px] xl:max-w-[610px] w-full xl:overflow-hidden ">
+					</div>
+					<div
+						class="info-wrapper overflow-y-auto hidden xl:block xl:max-h-[1202px] max-w-[634px] w-full overflow-hidden  border border-borderCard rounded-10 ">
+						<div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="bg-primaryFooter pt-14 pb-12">
+			<div class="container text-lightColor flex flex-col sm:flex-row justify-between gap-8">
+				<div class=" flex flex-col gap-4 justify-between">
+					<div>
+						<div class="flex flex-col gap-6">
+							<a href="#" class="mb-2">
+								<img class="w-[67px] md:w-[87px]" src="./public/assets/staft-logo-white.svg" alt="Logo">
+							</a>
+							<div class="flex gap-5">
+								<a href="#"> <img src="./public/assets/icons/facebook.svg" alt="Facebook">
+								</a>
+								<a href="#"> <img src="./public/assets/icons/instagram.svg" alt="Instagram">
+								</a>
+								<a href="#"> <img src="./public/assets/icons/twitter.svg" alt="Twitter">
+								</a>
+							</div>
+							<div class="max-full lg:max-w-40  text-xs md:text-sm">
+								360 E. 2nd St., Ste. 800
+								Los Angeles, CA 90012
+							</div>
+						</div>
+					</div>
+					<div class="max-full lg:max-w-56 text-xs md:text-sm">Copyright 2024© Staft | All Right
+						Reserved.</div>
+				</div>
+				<div class="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-20 pt-0 xl:pt-7 w-2/4 lg:w-fit ">
+					<div class="custom-menu " id="menu1">
+						<div class="menu-toggle">
+							<span class="menu-title">Employers</span>
+							<img class="arrow-icon" src="./public/assets/icons/chevron-down.svg" alt="Arrow">
+						</div>
+						<div class="menu-content">
+							<a href="#">Search Job Seekers</a>
+							<a href="#">Create Profile</a>
+							<a href="#">Sign In</a>
+						</div>
+					</div>
+					<div class="custom-menu " id="job">
+						<div class="menu-toggle">
+							<span class="menu-title">Job Seekers</span>
+							<img class="arrow-icon" src="./public/assets/icons/chevron-down.svg" alt="Arrow">
+						</div>
+						<div class="menu-content">
+							<a href="#">Create Profile</a>
+							<a href="#">Sign In</a>
+						</div>
+					</div>
+					<div class="custom-menu " id="roles">
+						<div class="menu-toggle">
+							<span class="menu-title">Popular Roles</span>
+							<img class="arrow-icon" src="./public/assets/icons/chevron-down.svg" alt="Arrow">
+						</div>
+						<div class="menu-content">
+							<a href="#">Retail Sales Associate</a>
+							<a href="#">Customer Service Representative</a>
+							<a href="#">Account Executive</a>
+							<a href="#">Data Entry Clerk</a>
+							<a href="#">Sales Development Representative</a>
+							<a href="#">Call Center Agent</a>
+							<a href="#">Sales Manager</a>
+							<a href="#">Executive Assistant</a>
+						</div>
+					</div>
+					<div class="custom-menu " id="locations">
+						<div class="menu-toggle">
+							<span class="menu-title">Top Locations</span>
+							<img class="arrow-icon" src="./public/assets/icons/chevron-down.svg" alt="Arrow">
+						</div>
+						<div class="menu-content">
+							<a href="#">Los Angeles</a>
+							<a href="#">Long Beach</a>
+							<a href="#">Santa Clarita</a>
+							<a href="#">Glendale</a>
+							<a href="#">Lancaster</a>
+							<a href="#">Palmdale</a>
+							<a href="#">Pomona</a>
+							<a href="#">Torrance</a>
+						</div>
+					</div>
+					<div class="custom-menu " id="company">
+						<div class="menu-toggle">
+							<span class="menu-title">Our Company</span>
+							<img class="arrow-icon" src="./public/assets/icons/chevron-down.svg" alt="Arrow">
+						</div>
+						<div class="menu-content">
+							<a href="#">About</a>
+							<a href="#">Blog</a>
+							<a href="#">Terms of Use</a>
+							<a href="#">Privacy Policy</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	</div>
+</body>
+
+</html>
